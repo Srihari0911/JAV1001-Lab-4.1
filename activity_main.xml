@@ -1,0 +1,102 @@
+/* This project was worked in group with Jobin Koodathinkal Jose (A00250653) and myself Sri Hari Sreenivasan (A00272180).
+We both worked in developing the logic and designing the layouts. I worked on Textviews along with spinner. 
+Jobin worked on Buttons and OnClickListeners. */
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/team1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="Team 1" />
+
+        <TextView
+            android:id="@+id/team2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="Team 2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/team1_score"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="0" />
+
+        <Spinner
+            android:id="@+id/score1_increment"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:entries="@array/scoring_options" />
+
+        <TextView
+            android:id="@+id/team2_score"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="0" />
+
+        <Spinner
+            android:id="@+id/score2_increment"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:entries="@array/scoring_options" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/team1_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/team1_decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/team2_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/team2_decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+    </LinearLayout>
+</LinearLayout>
+
