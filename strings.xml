@@ -1,0 +1,17 @@
+/* This project was worked in group with Jobin Koodathinkal Jose (A00250653) and myself Sri Hari Sreenivasan (A00272180).
+We both worked in developing the logic and designing the layouts. I worked on Textviews along with spinner. 
+Jobin worked on Buttons and OnClickListeners. */
+
+<resources>
+    <string name="app_name">Score Keeping App</string>
+  
+  //Spinner Values
+ 
+    <string-array name="scoring_options">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+    </string-array>
+</resources>
