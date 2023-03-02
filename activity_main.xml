@@ -1,9 +1,10 @@
-/* This project was worked in group with Jobin Koodathinkal Jose (A00250653) and myself Sri Hari Sreenivasan (A00272180).
+<!-- This project was worked in group with Jobin Koodathinkal Jose (A00250653) and myself Sri Hari Sreenivasan (A00272180).
 We both worked in developing the logic and designing the layouts. I worked on Textviews along with spinner. 
-Jobin worked on Buttons and OnClickListeners. */
+Jobin worked on Buttons and OnClickListeners. -->
 
 <?xml version="1.0" encoding="utf-8"?>
 
+<!--Linear Layout created for entire screen -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,11 +12,13 @@ Jobin worked on Buttons and OnClickListeners. */
     android:gravity="center"
     android:orientation="vertical">
 
+    <!--Linear Layout created for Text view for team names -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="63dp"
         android:gravity="center">
 
+        <!--Text view created for team names -->
         <TextView
             android:id="@+id/team1_name"
             android:layout_width="wrap_content"
@@ -34,11 +37,13 @@ Jobin worked on Buttons and OnClickListeners. */
 
     </LinearLayout>
 
+    <!--Linear Layout created for Text view for team scores and spinner -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="53dp"
         android:gravity="center">
 
+        <!--Text view created for team scores -->
         <TextView
             android:id="@+id/team1_score"
             android:layout_width="120dp"
@@ -46,6 +51,7 @@ Jobin worked on Buttons and OnClickListeners. */
             android:textAlignment="center"
             android:text="0" />
 
+        <!-- Spinner to increment or decrement score by a specific value-->
         <Spinner
             android:id="@+id/score1_increment"
             android:layout_width="wrap_content"
@@ -68,11 +74,13 @@ Jobin worked on Buttons and OnClickListeners. */
 
     </LinearLayout>
 
+    <!--Linear Layout created for Buttons -->
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
+        <!--Buttons to increment or decrement scores -->
         <Button
             android:id="@+id/team1_increase"
             android:layout_width="wrap_content"
