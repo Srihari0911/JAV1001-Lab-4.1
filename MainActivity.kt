@@ -2,6 +2,8 @@
 We both worked in developing the logic and designing the layouts. I worked on Textviews along with spinner. 
 Jobin worked on Buttons and OnClickListeners. */
 
+// We chose Cricket as our game and we don't have negative values. Though we chose Cricket the max value for spinner is 6.
+
 package com.example.scorekeepingapp
 
 import androidx.appcompat.app.AppCompatActivity
