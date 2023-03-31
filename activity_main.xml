@@ -25,7 +25,9 @@ Jobin worked on Buttons and OnClickListeners. -->
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textAlignment="center"
-            android:text="Team 1" />
+            android:text="Team 1"
+            style="@style/MyTextView"
+            android:textSize="25sp"/>
 
         <TextView
             android:id="@+id/team2_name"
@@ -33,7 +35,9 @@ Jobin worked on Buttons and OnClickListeners. -->
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textAlignment="center"
-            android:text="Team 2" />
+            android:text="Team 2"
+            style="@style/MyTextView"
+            android:textSize="25sp"/>
 
     </LinearLayout>
 
@@ -49,7 +53,9 @@ Jobin worked on Buttons and OnClickListeners. -->
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="0" />
+            android:text="0"
+            style="@style/MyTextView"
+            android:textSize="25sp"/>
 
         <!-- Spinner to increment or decrement score by a specific value-->
         <Spinner
@@ -63,7 +69,9 @@ Jobin worked on Buttons and OnClickListeners. -->
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="0" />
+            android:text="0"
+            style="@style/MyTextView"
+            android:textSize="25sp"/>
 
         <Spinner
             android:id="@+id/score2_increment"
@@ -73,38 +81,52 @@ Jobin worked on Buttons and OnClickListeners. -->
 
 
     </LinearLayout>
-
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
     <!--Linear Layout created for Buttons -->
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <!--Buttons to increment or decrement scores -->
-        <Button
-            android:id="@+id/team1_increase"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+" />
+        <!--Toggle button is used to switch teams -->
 
-        <Button
-            android:id="@+id/team1_decrease"
-            android:layout_width="wrap_content"
+        <Switch
+            android:id="@+id/team_toggle_button"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="-" />
-
-        <Button
-            android:id="@+id/team2_increase"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+" />
-
-        <Button
-            android:id="@+id/team2_decrease"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-" />
+            android:text="Switch Teams"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--Buttons to increment or decrement scores -->
+        <Button
+            android:id="@+id/team_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:padding="10dp"
+            android:background="@drawable/shape_circle"/>
+
+        <Button
+            android:id="@+id/team_decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:padding="10dp"
+            android:background="@drawable/shape_circle"/>
+
+    </LinearLayout>
+
+
 </LinearLayout>
 
